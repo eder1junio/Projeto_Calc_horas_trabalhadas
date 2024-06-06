@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Entrada de Hora</title>
+</head>
+<body>
+    <label for="timeInput">Informe a hora (HH:MM):</label>
+    <input type="time" id="timeInput" name="timeInput" required>
+    <button onclick="validateTime()">Enviar</button>
+
+    <script>
+        function validateTime() {
+            const timeInput = document.getElementById('timeInput').value;
+            if (timeInput) {
+                alert(`Hora válida: ${timeInput}`);
+            } else {
+                alert('Por favor, insira uma hora válida.');
+            }
+        }
+    </script>
+</body>
+</html>
